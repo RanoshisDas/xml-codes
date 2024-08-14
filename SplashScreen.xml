@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    tools:context=".SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="75dp"
+            >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textSize="40sp"
+            android:text="@string/app_name"/>
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Be Proud, Made In India 🇮🇳"
+<!-- can enter your country name -->
+    android:layout_above="@+id/developer"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:textColor="@color/off_white"/>
+
+    <TextView
+	android:id="@+id/developer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by Vinayek Tech\n Developer: Ranoshis Das"
+<!--       edit above part and enter your paly account name or your name -->
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/off_white"/>
+</RelativeLayout>
